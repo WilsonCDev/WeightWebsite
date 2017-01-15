@@ -1,9 +1,9 @@
 <?php
 
 define("HOST", "localhost");
-define("USER", "");
-define("PASS", "");
-define("DB", "");
+define("USER", "webcraft");
+define("PASS", "webcraft");
+define("DB", "wcd_weight");
 
 define("CAN_REGISTER", "any");
 define("DEFAULT_ROLE", "member");
