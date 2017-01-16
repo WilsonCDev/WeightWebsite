@@ -7,9 +7,9 @@ include_once('lib/DBConnect.php');
 
 sec_session_start();
 
-$title = "Home";
+$title = "First Login";
 $user = $_SESSION['username'];
 
 include_once('lib/Include/Base.php');
-include_once('lib/PageInclude/Index.php');
+include_once('lib/PageInclude/FirstLogin.php');
 include_once('lib/Include/End.php');
