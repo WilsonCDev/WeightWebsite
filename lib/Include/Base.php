@@ -17,5 +17,5 @@
 </head>
 <body style="background-color: #cecece; padding: 10px">
 <div class="container" style="background-color: #ffffff; border-top: 8px solid #23499A; border-bottom: 4px solid #23499A; padding-bottom: 20px">
-    <h1><img src="../../assets/img/wcd.png" width="15%">Weight Tracking</h1>
+    <h1><a href="/"><img src="../../assets/img/wcd.png" width="15%"></a>Weight Tracking</h1>
     <hr/>

@@ -7,11 +7,13 @@ include_once('lib/DBConnect.php');
 
 sec_session_start();
 
-$title = "Dashboard";
+$title = "Leaderboard";
+
 if (login_check($mysqli) == true) {
     $user = $_SESSION['username'];
+
     include_once('lib/Include/BaseCenter.php');
-    include_once('lib/PageInclude/Dashboard.php');
+    include_once('lib/PageInclude/Leaderboard.php');
     include_once('lib/Include/End.php');
 } else {
     header('Location: /index');

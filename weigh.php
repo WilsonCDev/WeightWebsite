@@ -8,8 +8,17 @@ include_once('lib/DBConnect.php');
 sec_session_start();
 
 $title = "Weigh In";
-$user = $_SESSION['username'];
 
-include_once('lib/Include/BaseDash.php');
-include_once('lib/PageInclude/Weigh.php');
-include_once('lib/Include/End.php');
+if (login_check($mysqli) == true) {
+    $user = $_SESSION['username'];
+
+    include_once('lib/Include/BaseCenter.php');
+    if (date("D", time()) == "Sun") {
+        include_once('lib/PageInclude/Weigh.php');
+    } else {
+        echo('<div class="alert alert-danger" role="alert"><strong>Error: </strong> You may only weigh in on Sunday\'s</div>');
+    }
+    include_once('lib/Include/End.php');
+} else {
+    header('Location: /index');
+}

@@ -5,10 +5,16 @@
     <div class="form-group row">
         <div class="col-md-3">
             <label for="name"><b>Name</b></label>
-            <input class="form-control" type="text" id="name" name="name" placeholder="Your displayed name.">
+            <input class="form-control" type="text" id="name" name="name" placeholder="Your displayed name">
         </div>
     </div>
 
+    <div class="form-group row">
+        <div class="col-md-3">
+            <label for="startWeight"><b>Starting Weight</b></label>
+            <input class="form-control" type="text" id="startWeight" name="startWeight" placeholder="Your current weight">
+        </div>
+    </div>
 
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>

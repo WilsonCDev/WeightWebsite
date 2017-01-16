@@ -8,6 +8,9 @@ include_once('lib/DBConnect.php');
 sec_session_start();
 
 $title = "Login";
+if (login_check($mysqli) == false) {
+    header('Location: /index');
+}
 $user = $_SESSION['username'];
 
 include_once('lib/Include/BaseCenter.php');
